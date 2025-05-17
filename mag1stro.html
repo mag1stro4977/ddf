@@ -1,0 +1,88 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Client Work Showcase</title>
+  <link rel="stylesheet" href="mag1stro.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">LOGO</div>
+    <nav class="menu">
+      <a href="#">Home</a>
+      <a href="#">About us</a>
+      <a href="#">Portfolio</a>
+    </nav>
+    <div class="theme-toggle">
+      <button class="light">LightMode</button>
+      <button class="dark">DarkMode</button>
+    </div>
+  </header>
+  <main class="content">
+    <section class="left">
+      <h1>Work that we produce<br>for our clients</h1>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing<br>
+        and typesetting industry. Lorem Ipsum has been the<br>
+        industry's standard.
+      </p>
+      <button class="cta">Get more details</button>
+    </section>
+    <section class="right">
+    <img src="Rectangle 24.png" alt="">
+    </section>
+  </main>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Опрос пользователя</title>
+</head>
+<body>
+  <h1>Добро пожаловать!</h1>
+  <p>Нажмите кнопку ниже, чтобы начать опрос из 25 вопросов.</p>
+  <button onclick="начатьОпрос()">Начать опрос</button>
+
+  <script>
+    function начатьОпрос() {
+      alert("Здравствуйте! Вам зададут несколько вопросов (25), чтобы узнать больше о вас.");
+
+      const вопросы = [
+        ["Как вас зовут?", "Имя"],
+        ["Введите фамилию (необязательно, можно ввести просто 'НЕТ')", "Фамилия"],
+        ["Сколько вам лет?", "Возраст"],
+        ["Ваш любимый цвет?", "Цвет"],
+        ["Ваше любимое число?", "Число"],
+        ["Ваш домашний адрес?", "Адрес"],
+        ["В каком городе вы живёте?", "Город"],
+        ["В какой стране вы живёте?", "Страна"],
+        ["Ваше любимое животное?", "Животное"],
+        ["Ваше хобби?", "Хобби"],
+        ["Ваш любимый фильм?", "Фильм"],
+        ["Ваш любимый музыкальный жанр?", "Музыка"],
+        ["Ваша любимая книга?", "Книга"],
+        ["Любимый вид спорта?", "Спорт"],
+        ["Любимая еда?", "Еда"],
+        ["Любимый напиток?", "Напиток"],
+        ["Какой язык вы хотите выучить?", "Язык"],
+        ["Кем вы хотите стать?", "Профессия"],
+        ["О чём вы мечтаете?", "Мечта"],
+        ["Какая у вас главная цель в жизни?", "Цель"],
+        ["Месси или Роналду?", "Футбол: Месси или Роналду"],
+        ["Барса или Реал?", "Футбол: Барса или Реал"],
+        ["Пеле или Марадона?", "Футбол: Пеле или Марадона"],
+        ["Ямаль или Гуллер?", "Футбол: Ямаль или Гуллер"],
+        ["Ван Бастен или Ван Нистелрой?", "Футбол: Ван Бастен или Ван Нистелрой"]
+      ];
+
+      вопросы.forEach(([вопрос, метка]) => {
+        const ответ = prompt(вопрос);
+        console.log(`${метка}: ${ответ}`);
+      });
+    }
+  </script>
+</body>
+</html>
